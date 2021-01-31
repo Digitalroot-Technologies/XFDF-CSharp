@@ -10,7 +10,7 @@ namespace Xfdf
   public class Xfdf : IXfdf
   {
     /// <summary>
-    /// This is the Content-Length Header that tells the browser how big the file is. IE will not the file without this.
+    /// This is the Content-Length Header that tells the browser how big the file is. IE will not open the file without this.
     /// </summary>
     private const string HeaderContentLength = "Content-Length: ";
 
@@ -25,17 +25,17 @@ namespace Xfdf
     private string _pathToPdf;
 
     /// <summary>
-    /// This hold the XML that the user passes with addValue.
+    /// This holds the XML that the user passes with addValue.
     /// </summary>
     private string _xmlBody;
 
     /// <summary>
-    /// This hold the XML that ends/closes the XFDF file.
+    /// This holds the XML that ends/closes the XFDF file.
     /// </summary>
     private string _xmlFooter;
 
     /// <summary>
-    /// This hold the XML that starts the XFDF file.
+    /// This holds the XML that starts the XFDF file.
     /// </summary>
     private string _xmlHeader;
 
